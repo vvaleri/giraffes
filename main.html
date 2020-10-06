@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Жирафы</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="menu">
+            <div class="menu__head">
+                <picture><source srcset="img/logo-one.webp" type="image/webp"><img class="menu__logo" src="img/logo-one.png" alt="логотип"></picture>
+                <div class="menu__title">Ферма Заслуженных Жирафов <span>России и СНГ</span></div>
+            </div>
+
+            <div class="menu__panel">
+               <nav> 
+                   <ul class="menu__items">
+                    <li class="menu__list active" data-menu="main">
+                        <picture><source srcset="img/home.svg" type="image/webp"><img src="img/home.svg" alt="главная страница"></picture><a href="#" class="menu__link">Главная</a>
+                    </li>
+                    <li class="menu__list" data-menu="control">
+                        <picture><source srcset="img/list.svg" type="image/webp"><img src="img/list.svg" alt="управление"></picture> <a href="#" class="menu__link">Управление</a> 
+                    </li>
+                    <li class="menu__list" data-menu="giraffe">
+                        <picture><source srcset="img/horse.svg" type="image/webp"><img src="img/horse.svg" alt="жирафы"></picture> <a href="#" class="menu__link">Жирафы</a>
+                    </li>
+                    <li class="menu__list" data-menu="staff">
+                        <picture><source srcset="img/people.svg" type="image/webp"><img src="img/people.svg" alt="сотрудники"></picture> <a href="#" class="menu__link">Сотрудники</a>
+                    </li>
+                    <li class="menu__list" data-menu="setting">
+                        <picture><source srcset="img/sett.svg" type="image/webp"><img src="img/sett.svg" alt="настройки"></picture><a href="#" class="menu__link">Настройки</a>
+                    </li>
+                    <li class="menu__list" data-menu="support">
+                         <picture><source srcset="img/support.svg" type="image/webp"><img src="img/support.svg" alt="поддержка"></picture><a href="#" class="menu__link">Поддержка</a>
+                    </li>
+                    </ul> 
+                </nav>
+            </div>
+        </div>
+
+        <div class="main">
+
+            <div class="main__header header _container">
+                <picture><source srcset="img/bell.svg" type="image/webp"><img class="header__icon" src="img/bell.svg" alt="колокольчик"></picture>
+                 <picture><source srcset="img/logo-mail.webp" type="image/webp"><img class="header__logo" src="img/logo-mail.jpg" alt="логотип"></picture>
+                 <a href="index.html" class="header__mail">hello@giraffe.com</a>
+            </div>
+            <div class="main__content content-main _container" data-menu="giraffe"> 
+                <div class="content-main__title">
+                    Жирафы
+                    <picture><source srcset="img/add-gir.svg" type="image/webp"><img tabindex="0" role="button" class="content-main__btn" src="img/add-gir.svg" alt="кнопка добавить"></picture>
+                    <div class="content-main__error">Только 2 новых жирафа</div>
+                </div>
+
+                <div class="content-main__cards cards">
+                    <div class="cards__item item-new items-active" data-item="New one">
+                        <div  class="cards__option"><picture><source srcset="img/setting.svg" type="image/webp"><img tabindex="0" class="cards__option-btn" src="img/setting.svg" alt="кнопка настройки"></picture></div>
+                        <div class="option">
+                            <button class="option__edit"><picture><source srcset="img/edit.svg" type="image/webp"><img src="img/edit.svg" alt="кнопка редактировать"></picture>Редактировать</button>
+                            <button class="option__delete"><picture><source srcset="img/delete.svg" type="image/webp"><img src="img/delete.svg" alt="кнопка Удалить"></picture>Удалить</button> 
+                        </div>
+                        <div class="cards__logo">
+                            <picture><source srcset="img/new-giraffe.webp" type="image/webp"><img src="img/new-giraffe.png" alt="новый жираф"></picture>
+                        </div>
+                        <div class="cards__title"><input class="input-save" type="text" placeholder="Имя" disabled></div>
+                        <div class="cards__icons">
+                            <picture><source srcset="img/gender.svg" type="image/webp"><img src="img/gender.svg" alt="пол"></picture>
+                            <picture><source srcset="img/scale.svg" type="image/webp"><img src="img/scale.svg" alt="рост"></picture>
+                            <picture><source srcset="img/weight.svg" type="image/webp"><img src="img/weight.svg" alt="вес"></picture>
+                        </div>
+                        <div class="cards__panel">
+                            <input class="input-save" type="text" placeholder="-" disabled>
+                            <input class="input-save" type="text" placeholder="-" disabled>
+                            <input class="input-save" type="text" placeholder="-" disabled>
+                        </div>
+                        <div class="cards__text">
+                            <p><span>Цвет: </span><input class="input-save" type="text" disabled></p>
+                            <p><span>Диета: </span><input class="input-save" type="text" disabled></p>
+                            <p><span>Характер: </span><input class="input-save _center" type="text" disabled></p>
+                        </div>
+                        <button class="cards__save" id="save-new">Сохранить</button>
+                    </div>
+
+                    <div class="cards__item new-item items-active" data-item="New">
+                        <div class="cards__option"><picture><source srcset="img/setting.svg" type="image/webp"><img tabindex="0"  class="cards__option-btn" src="img/setting.svg" alt="кнопка настройки"></picture></div>
+                        <div class="option">
+                          <button class="option__edit"><picture><source srcset="img/edit.svg" type="image/webp"><img src="img/edit.svg" alt="кнопка редактировать"></picture>Редактировать</button>
+                          <button class="option__delete"><picture><source srcset="img/delete.svg" type="image/webp"><img src="img/delete.svg" alt="кнопка Удалить"></picture>Удалить</button> 
+                        </div>
+                        <div class="cards__logo">
+                            <picture><source srcset="img/lara.webp" type="image/webp"><img src="img/lara.png" alt="новый жираф"></picture>
+                        </div>
+                        <div class="cards__title"><input class="input-save" type="text" placeholder="Имя" disabled></div>
+                        <div class="cards__icons">
+                            <picture><source srcset="img/gender.svg" type="image/webp"><img src="img/gender.svg" alt="пол"></picture>
+                            <picture><source srcset="img/scale.svg" type="image/webp"><img src="img/scale.svg" alt="рост"></picture>
+                            <picture><source srcset="img/weight.svg" type="image/webp"><img src="img/weight.svg" alt="вес"></picture>
+                        </div>
+                        <div class="cards__panel">
+                            <input class="input-save" type="text" placeholder="-" disabled>
+                            <input class="input-save" type="text" placeholder="-" disabled>
+                            <input class="input-save" type="text" placeholder="-" disabled>
+                        </div>
+                        <div class="cards__text">
+                        <p><span>Цвет: </span><input class="input-save" type="text" disabled></p>
+                        <p><span>Диета: </span><input class="input-save" type="text" disabled></p>
+                        <p><span>Характер: </span><input class="input-save _center" type="text" disabled></p>
+                        </div>
+                        <button class="cards__save" id="new-save">Сохранить</button>
+                    </div>
+                  
+                    <div class="cards__item trace" data-item="Мотильда">
+                        <div class="cards__option"><picture><source srcset="img/setting.svg" type="image/webp"><img  tabindex="0" class="cards__option-btn" src="img/setting.svg" alt="кнопка настройки"></picture></div>
+                        <div class="option">
+                          <button class="option__edit"><picture><source srcset="img/edit.svg" type="image/webp"><img src="img/edit.svg" alt="кнопка редактировать"></picture>Редактировать</button>
+                          <button class="option__delete" ><picture><source srcset="img/delete.svg" type="image/webp"><img src="img/delete.svg" alt="кнопка Удалить"></picture>Удалить</button> 
+                        </div>
+                        <div class="cards__logo">
+                            <picture><source srcset="img/motild.webp" type="image/webp"><img src="img/motild.png" alt="жираф Мотильда"></picture>
+                        </div>
+                        <div class="cards__title"><input class="input-save" type="text" placeholder="Мотильда" disabled></div>
+                        <div class="cards__icons">
+                            <picture><source srcset="img/gender.svg" type="image/webp"><img src="img/gender.svg" alt="пол"></picture>
+                            <picture><source srcset="img/scale.svg" type="image/webp"><img src="img/scale.svg" alt="рост"></picture>
+                            <picture><source srcset="img/weight.svg" type="image/webp"><img src="img/weight.svg" alt="вес"></picture>
+                        </div>
+                        <div class="cards__panel">
+                            <input class="input-save" type="text" placeholder="Ж" disabled>
+                            <input class="input-save" type="text" placeholder="800" disabled>
+                            <input class="input-save" type="text" placeholder="4" disabled>
+                        </div>
+                        <div class="cards__text">
+                            <p><span>Цвет: </span><input class="input-save" type="text" placeholder="Стандарт" disabled></p>
+                            <p><span>Диета: </span><input class="input-save" type="text" placeholder="Растительная" disabled></p>
+                            <p><span>Характер: </span><input class="input-save _center" type="text" placeholder="Кокетка" disabled></p>
+                        </div>
+                        <button class="cards__save">Сохранить</button>
+                    </div>
+
+                    <div class="cards__item trace" data-item="Гога">
+                        <div class="cards__option"><picture><source srcset="img/setting.svg" type="image/webp"><img tabindex="0" class="cards__option-btn" src="img/setting.svg" alt="кнопка настройки"></picture></div>
+                        <div class="option">
+                            <button class="option__edit"><picture><source srcset="img/edit.svg" type="image/webp"><img src="img/edit.svg" alt="кнопка редактировать"></picture>Редактировать</button>
+                            <button class="option__delete"><picture><source srcset="img/delete.svg" type="image/webp"><img src="img/delete.svg" alt="кнопка Удалить"></picture>Удалить</button> 
+                        </div>
+                        <div class="cards__logo">
+                            <picture><source srcset="img/goga.webp" type="image/webp"><img src="img/goga.png" alt="жираф Гога"></picture>
+                        </div>
+                        <div class="cards__title"><input class="input-save" type="text" placeholder="Гога" disabled></div>
+                        <div class="cards__icons">
+                            <picture><source srcset="img/gender.svg" type="image/webp"><img src="img/gender.svg" alt="пол"></picture>
+                            <picture><source srcset="img/scale.svg" type="image/webp"><img src="img/scale.svg" alt="рост"></picture>
+                            <picture><source srcset="img/weight.svg" type="image/webp"><img src="img/weight.svg" alt="вес"></picture>
+                        </div>
+                        <div class="cards__panel">
+                            <input class="input-save" type="text" placeholder="М" disabled>
+                            <input class="input-save" type="text" placeholder="900" disabled>
+                            <input class="input-save" type="text" placeholder="4,9" disabled>
+                        </div>
+                        <div class="cards__text">
+                            <p><span>Цвет: </span><input class="input-save" type="text" placeholder="Жирафовый" disabled></p>
+                            <p><span>Диета: </span><input class="input-save" type="text" placeholder="Шашлычная" disabled></p>
+                            <p><span>Характер: </span><input class="input-save _center" type="text" placeholder="Вспыльчивый" disabled></p>
+                        </div>
+                        <button class="cards__save">Сохранить</button>
+                    </div>
+
+                    <div class="cards__item trace" data-item="Шнур">
+                        <div class="cards__option"><picture><source srcset="img/setting.svg" type="image/webp"><img tabindex="0" class="cards__option-btn" src="img/setting.svg" alt="кнопка настройки"></picture></div>
+                        <div class="option">
+                            <button class="option__edit"><picture><source srcset="img/edit.svg" type="image/webp"><img src="img/edit.svg" alt="кнопка редактировать"></picture>Редактировать</button>
+                            <button class="option__delete"><picture><source srcset="img/delete.svg" type="image/webp"><img src="img/delete.svg" alt="кнопка Удалить"></picture>Удалить</button> 
+                        </div>
+                        <div class="cards__logo">
+                            <picture><source srcset="img/shnur.webp" type="image/webp"><img src="img/shnur.png" alt="жираф Шнур"></picture>
+                        </div>
+                        <div class="cards__title"><input class="input-save" type="text" placeholder="Шнур" disabled></div>
+                        <div class="cards__icons">
+                            <picture><source srcset="img/gender.svg" type="image/webp"><img src="img/gender.svg" alt="пол"></picture>
+                            <picture><source srcset="img/scale.svg" type="image/webp"><img src="img/scale.svg" alt="рост"></picture>
+                            <picture><source srcset="img/weight.svg" type="image/webp"><img src="img/weight.svg" alt="вес"></picture>
+                        </div>
+                        <div class="cards__panel">
+                            <input class="input-save" type="text" placeholder="М" disabled>
+                            <input class="input-save" type="text" placeholder="800" disabled>
+                            <input class="input-save" type="text" placeholder="5,7" disabled>
+                        </div>
+                        <div class="cards__text">
+                            <p><span>Цвет: </span><input class="input-save" type="text" placeholder="Нездоровый" disabled></p>
+                            <p><span>Диета: </span><input class="input-save" type="text" placeholder="Жвачная" disabled></p>
+                            <p><span>Характер: </span><input class="input-save _center" type="text" placeholder="Хулиган" disabled></p>
+                        </div>
+                        <button class="cards__save">Сохранить</button>
+                    </div>
+
+                    <div class="cards__item trace" data-item="Леонид">
+                        <div class="cards__option"><picture><source srcset="img/setting.svg" type="image/webp"><img tabindex="0" class="cards__option-btn" src="img/setting.svg" alt="кнопка настройки"></picture></div>
+                        <div class="option">
+                            <button class="option__edit"><picture><source srcset="img/edit.svg" type="image/webp"><img src="img/edit.svg" alt="кнопка редактировать"></picture>Редактировать</button>
+                            <button class="option__delete"><picture><source srcset="img/delete.svg" type="image/webp"><img src="img/delete.svg" alt="кнопка Удалить"></picture>Удалить</button> 
+                        </div>
+                        <div class="cards__logo">
+                            <picture><source srcset="img/leo.webp" type="image/webp"><img src="img/leo.png" alt="жираф Леонид"></picture>
+                        </div>
+                        <div class="cards__title"><input class="input-save" type="text" placeholder="Леонид" disabled></div>
+                        <div class="cards__icons">
+                            <picture><source srcset="img/gender.svg" type="image/webp"><img src="img/gender.svg" alt="пол"></picture>
+                            <picture><source srcset="img/scale.svg" type="image/webp"><img src="img/scale.svg" alt="рост"></picture>
+                            <picture><source srcset="img/weight.svg" type="image/webp"><img src="img/weight.svg" alt="вес"></picture>
+                        </div>
+                        <div class="cards__panel">
+                            <input class="input-save" type="text" placeholder="М" disabled>
+                            <input class="input-save" type="text" placeholder="1000" disabled>
+                            <input class="input-save" type="text" placeholder="6" disabled>
+                        </div>
+                        <div class="cards__text">
+                            <p><span>Цвет: </span><input class="input-save" type="text" placeholder="Леонидовый" disabled></p>
+                            <p><span>Диета: </span><input class="input-save" type="text" placeholder="Ест детей" disabled></p>
+                            <p><span>Характер: </span><input class="input-save _center" type="text" placeholder="Нарцисс" disabled></p>
+                        </div>
+                        <button class="cards__save">Сохранить</button>
+                    </div>
+                </div>
+
+                <div class="content-main__progress progress">
+                    <picture><source srcset="img/close-proggress.svg" type="image/webp"><img class="progress__close" tabindex="0" src="img/close-proggress.svg" alt="кнопка закрыть"></picture>
+                    <div class="progress__content">
+                        <div class="progress__title"><span></span>Заполнение вольера</div>
+                        <div class="progress__main">
+                            <div class="progress__bar"><div class="progress__fill"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main__content main-control _container" data-menu="control">
+                <div class="main-control__title title">Управление</div>
+                <div class="main-control__content">
+                  <p>Можно <a class="main-control__link" href="#">вернуть</a> жирафов к первоначальному виду</p>
+                </div>
+                <div class="main-control__restore">
+                   <p>Вы уверены?</p>
+                    <button class="main-control__yes">Да</button>
+                    <button class="main-control__no">Не очень</button>
+                </div>
+            </div>
+            <div class="main__content main-screen active _container" data-menu="main">
+                <div class="main-screen__title title" >Добро пожаловать!</div>
+                <div class="main-screen__content" >
+                    <p>Здесь можно добавлять, редактировать и удалять жирафов. Доступ к меню каждого жирафа находится в правом верхнем углу</p>
+                    <picture><source srcset="img/меню.webp" type="image/webp"><img src="img/меню.png" alt="меню жирафов"></picture>
+                    <p>Отменить все внесённые изменения можно в разделе Управление</p>
+                </div>
+            </div>
+            <div class="main__content main-item _container" data-menu="staff">
+                <div class="main-item__title title">Сотрудники</div>
+                <div class="main-item__content">
+                    <p>Пока сотрудников нет. Только жирафы</p>
+                </div>
+            </div>
+            <div class="main__content main-item _container" data-menu="setting">
+                <div class="main-item__title title">Настройки</div>
+                <div class="main-item__content">
+                    <p>В настройках сейчас нет необходимости</p>
+                </div>
+            </div>
+            <div class="main__content main-item _container" data-menu="support">
+                <div class="main-item__title title">Поддержка</div>
+                <div class="main-item__content">
+                    <p>У вас всё получится</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script src="js/main.js"></script>
+</body>
+
+</html>
