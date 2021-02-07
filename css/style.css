@@ -163,6 +163,10 @@ body {
   margin-bottom: 25px;
   border-radius: 52px;
   color: #ffffff;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 .menu__list.active {
@@ -278,6 +282,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   display: none;
+  height: 100%;
 }
 
 .content-main.active {
@@ -349,6 +354,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
   margin: 30px 0px 50px 0px;
   max-width: 1020px;
   overflow: auto;
@@ -390,6 +398,7 @@ body {
   left: 0;
   height: 13px;
   width: 28px;
+  cursor: pointer;
 }
 
 .cards input {
@@ -653,6 +662,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
   width: 450px;
   margin: 0px 0px 0px 45%;
   padding: 30px 15px 20px 30px;
@@ -694,6 +706,7 @@ body {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .progress__fill {
@@ -824,7 +837,24 @@ body {
   transition: 0.5s;
 }
 
+@media (min-width: 767px) {
+  .menu__list.active:hover {
+    background-color: #ffffff;
+  }
+
+  .menu__list:hover {
+    background-color: #4a8546;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+}
+
 @media (min-width: 768px) {
+  .header__mail:hover {
+    text-decoration: underline;
+  }
+
   .content-main__btn:hover {
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
@@ -1027,10 +1057,6 @@ body {
 
   .header__mail {
     margin-left: 10px;
-  }
-
-  .header__mail:hover {
-    text-decoration: underline;
   }
 
   .header__logo {
