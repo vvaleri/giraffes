@@ -3,4 +3,4 @@ This [app](https://vvaleri.github.io/giraffes/) is something close to CRM. Manag
 
 Changes are saved in localstorage.
 
-
+![demo](https://github.com/vvaleri/giraffes/blob/master/demo.jpg)
