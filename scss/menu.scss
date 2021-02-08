@@ -1,0 +1,134 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 340px;
+   
+  &__head {
+    display: flex;
+    align-items: center;
+    margin: 5px 0 50px;
+ 
+    @media(max-width: 1100px) {
+      margin: 5px 0 30px;
+    }
+ 
+    @media(max-width: 768px) {
+      margin: 5px 0 0 5px;
+    }
+  }
+ 
+  &__title {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 10px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+
+    @media(max-width: 768px) {
+      display: none;
+    }
+     
+    span {
+      padding: 5px 0 0 0;
+      font-weight: 300;
+    }
+  }
+ 
+  &__panel {
+    padding: 0 18px 0 20px;
+     
+    @media(max-width: 768px) {
+      position: fixed;
+      padding: 0;
+      top: 80px;
+      left: 10px;
+      z-index: 10;
+    }
+ 
+    @media(max-width: 480px) {
+      left: 5px;
+    }
+ 
+    @media(max-height: 375px) and (orientation: landscape) {
+      top: 70px;
+    }
+  }
+ 
+  &__list {
+    display: flex;
+    align-items: center;
+    margin: 0 0 25px 0;
+    width: 220px;
+    background-color: #567354;
+    text-align: center;
+    border-radius: 52px;
+    color: #ffffff;
+    transition: background-color .3s;
+    cursor: pointer;
+
+    @media(min-width: 767px) {
+    
+      &:hover {
+        background-color: #4a8546;
+        transition: background-color .3s;
+      }
+    }
+
+    @media(max-width: 768px) {
+      margin: 0 0 15px 0;
+      width: 50px;
+    }
+  
+    @media(max-height: 375px) and (orientation: landscape) {
+      justify-content: center;
+      margin: 0 0 5px 0;
+    }
+
+    a {
+      @media(max-width: 768px) {
+        display: none;
+      }
+    }
+ 
+    &.active {
+      background-color: #ffffff;
+
+      @media(min-width: 767px) { 
+         
+        &:hover {
+          background-color: #ffffff;
+        }
+      }
+ 
+      a {
+        color: #567354;
+      }
+    }
+  }
+ 
+  &__list img {
+    padding: 0 0 0 18px;
+     
+    @media(max-width: 768px) {
+      padding: 10px;
+    }
+ 
+    @media(max-height: 375px) and (orientation: landscape) {
+      padding: 5px;
+    }
+  }
+ 
+  &__link {
+    padding: 16px 0;
+    margin: 0 0 0 27px;
+    font-size: 17px;
+    line-height: 20px;
+ 
+    @media(max-width: 768px) {
+      margin: 0 0 0 5px;
+    }
+  }
+}

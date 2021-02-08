@@ -1,0 +1,130 @@
+.progress {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  width: 450px;
+  margin: 0px 0px 0px 45%;
+  padding: 30px 15px 20px 30px;
+  border-radius: 28px 28px 0 0;
+  background-color: #668663;
+  transition: .7s;
+  
+  @media(min-height: 1024px) {
+    margin: 80px 0 0 0;
+  }
+  
+  @media(max-width: 1024px) {
+    margin: 0;
+  }
+  
+  @media(max-width: 530px) {
+    width: 380px;
+  }
+  
+  @media(max-width: 480px) {
+    position: relative;
+    width: 220px;
+    margin: 0 0 10px 0;
+    padding: 10px 15px 20px 30px;
+    border-radius: 0  28px 28px 0;
+    transform: rotate(-90deg);
+  }
+         
+  &__title {
+    color: #ffff;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+  
+    @media(max-width: 480px) {
+      transform: rotate(90deg);
+      font-size: 16px;
+      max-width: 40px;
+      display: flex;
+      flex-direction: column;
+      line-height: 20px;
+      margin: 0 0 10px 0;
+    }
+       
+    span {
+      padding: 0 0 0 15px;
+      font-size: 50px;
+      line-height: 59px;
+  
+      @media(max-width: 480px) {
+        padding: 0 15px 10px 0;
+        font-size: 30px;
+        line-height: 15px;
+      }
+    }
+  }
+  
+  &__main {
+    display: flex;
+  }
+     
+  &__bar {
+    position: relative;
+    width: 320px;
+    height: 31px;
+    background-color: #435F40;
+    border-radius: 35px;
+  
+    @media(max-width: 480px) {
+      width: 150px;
+      margin: 0 0px 50px 25px;
+      transform: rotate(90deg);
+    }
+  }
+  
+  &__close {
+    margin: 0 0 3% 95%;
+    transition: .5s;
+    cursor: pointer;
+  
+    @media(min-width: 768px) {
+        
+      &:hover {
+        transform: rotate(45deg);
+        transition: .3s;
+      }
+    }
+     
+    @media(max-width: 480px) {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+    }
+  }
+  
+  &__fill {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 70%;
+    background-color: #F3DBC7;
+    border-radius: 35px;
+  }
+}
+  
+.hide {
+  width: 50px;
+  height: 30px;
+  padding: 10px 15px;
+  border-radius: 10px 10px 0 0;
+  transition: .6s;
+  
+  @media(max-width: 480px) {
+    width: 30px;
+    height: 20px;
+    transform: rotate(45deg);
+    border-radius: 10px;
+  }
+}
+  
+.rotate {
+  transform: rotate(45deg);
+  transition: .3s;
+  
+}
+  
