@@ -189,6 +189,12 @@
         background-color: #ffffff;
         transition: background-color .4s;
       }
+
+      &:focus {
+        outline: none;
+        color: #567354 ;
+        background-color: #ffffff;
+      }
     }
   }
 }

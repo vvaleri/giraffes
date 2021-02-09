@@ -75,6 +75,7 @@
         background-color: #4a8546;
         transition: background-color .3s;
       }
+
     }
 
     @media(max-width: 768px) {
@@ -90,6 +91,13 @@
     a {
       @media(max-width: 768px) {
         display: none;
+      }
+
+      &:focus {
+        color: #484848;
+        outline: none;
+        border: 1px dashed #fff;
+        border-radius: 35px;
       }
     }
  

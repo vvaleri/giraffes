@@ -51,7 +51,13 @@
       left: 0;
       height: 13px;
       width: 28px;
-      cursor: pointer;   
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+        border: 2px solid #435F40;
+        border-radius: 10px;
+      }
     }
   }
     

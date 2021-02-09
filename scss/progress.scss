@@ -95,6 +95,10 @@
       bottom: 10px;
       right: 10px;
     }
+
+    &:focus {
+      outline-color: #fff;
+    }
   }
   
   &__fill {
