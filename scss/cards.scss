@@ -16,11 +16,9 @@
  
   @media(max-width: 1024px) {
     flex-wrap: wrap;
-  }
- 
-  @media(max-width: 768px) {
     justify-content: center;
   }
+ 
     
   &__item {
     display: flex;
@@ -33,10 +31,14 @@
     height: 495px;  
     background-color: #F3DBC7;
     border-radius: 28px;
-    transition: .5s;
+    transition: .3s;
  
     @media(max-width: 768px) {
-      margin: 0 0 10px 0;
+      margin: 0 10px 10px 0;
+    }
+
+    @media(max-width: 500px) {
+      margin-right: 0;
     }
   }
     
@@ -52,11 +54,19 @@
       height: 13px;
       width: 28px;
       cursor: pointer;
+      transition: opacity .3s;
 
-      &:focus {
-        outline: none;
-        border: 2px solid #435F40;
-        border-radius: 10px;
+      @media (hover: hover), screen and (min-width: 0\0) {
+
+        &:focus {
+          outline: none;
+          border: 1px solid #435F40;
+          border-radius: 10px;
+        }
+
+        &:hover {
+          opacity: .7;
+        }
       }
     }
   }
@@ -151,13 +161,15 @@
     border-radius: 33px;
     background-color: #567354;
     color: #FFFFFF;
-    transition: .5s;
+    transition: background-color .3s;
+    outline: none;
+    cursor: pointer;
  
-    @media(min-width: 768px) {
+    @media (hover: hover), screen and (min-width: 0\0) {
 
-      &:hover {
-        transform: scale(1.1);
-        transition: .5s;
+      &:hover,
+      &:focus {
+        background-color: rgba(86, 115, 84, .7);
       }
     }
   }
@@ -225,10 +237,17 @@
     margin: 0 0 0 5px;
     padding: 6px 8px 6px 8px;
     max-width: 150px;
+    cursor: pointer;
+    transition: background-color .3s, border-radius .3s;
+    outline: none;
  
-    &:hover {
-      background: #567354;
-      border-radius: 52px;   
+    @media (hover: hover), screen and (min-width: 0\0) {
+
+      &:hover,
+      &:focus {
+        background: #567354;
+        border-radius: 52px;   
+      }
     }
   }
  

@@ -79,14 +79,13 @@
   
   &__close {
     margin: 0 0 3% 95%;
-    transition: .5s;
+    transition: transform .5s;
     cursor: pointer;
   
-    @media(min-width: 768px) {
+    @media (hover: hover), screen and (min-width: 0\0) {
         
       &:hover {
         transform: rotate(45deg);
-        transition: .3s;
       }
     }
      

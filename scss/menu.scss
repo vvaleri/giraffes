@@ -69,13 +69,11 @@
     transition: background-color .3s;
     cursor: pointer;
 
-    @media(min-width: 767px) {
+    @media (hover: hover), screen and (min-width: 0\0) {
     
       &:hover {
         background-color: #4a8546;
-        transition: background-color .3s;
       }
-
     }
 
     @media(max-width: 768px) {
@@ -89,22 +87,27 @@
     }
 
     a {
+      outline: none;
+      transition: color .3s;
+
       @media(max-width: 768px) {
         display: none;
       }
 
-      &:focus {
-        color: #484848;
-        outline: none;
-        border: 1px dashed #fff;
-        border-radius: 35px;
+      @media (hover: hover), screen and (min-width: 0\0) {
+      
+        &:focus {
+          color: #484848;
+        }
       }
+
+     
     }
  
     &.active {
       background-color: #ffffff;
 
-      @media(min-width: 767px) { 
+      @media (hover: hover), screen and (min-width: 0\0) { 
          
         &:hover {
           background-color: #ffffff;

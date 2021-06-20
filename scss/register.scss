@@ -37,7 +37,7 @@
       color: #435F40;
       cursor: not-allowed;
 
-      @media(min-width: 768px) {
+      @media (hover: hover), screen and (min-width: 0\0) {
         
         &:hover {
           text-decoration: underline;
@@ -109,18 +109,17 @@
     background-color: #435F40;
     border-radius: 25px;
     color: #ffff;
-    transition: .5s;
+    transition: background-color .3s;
 
     @media(min-width: 1600px) {
       margin: 20px 0 0 0;
       padding: 15px 40px;
     }
       
-    @media(min-width: 768px) {
+    @media (hover: hover), screen and (min-width: 0\0) {
         
       &:hover {
-        transform: scale(1.1);
-        transition: .5s;
+        background-color: rgba(86, 115, 84, .8);
       }
     } 
   }
